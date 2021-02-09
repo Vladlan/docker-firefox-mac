@@ -12,5 +12,4 @@ xhost + $ip`
 
 1. Install XServer: `choco install vcxsrv `
 2. docker build -t=firefox .
-3. set-variable -name DISPLAY -value your-ip:0.0
-4. docker run -ti --rm -e DISPLAY=$DISPLAY firefox
+3. docker run -ti --rm -e DISPLAY=host.docker.internal:0 firefox
